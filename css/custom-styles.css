@@ -1,0 +1,353 @@
+@media (max-width: 767px) {
+  body { padding-right: 0px; padding-left: 0px; }
+  .container {margin-right: 20px; margin-left: 20px;}
+ }
+
+
+
+/***** Links *****/
+a, a:hover {
+	font-size: 12px;
+}
+
+/***** Misc *****/
+i {margin-right: 3px;}
+p {margin-bottom: 20px;}
+
+
+/**************************************
+/ Gallery
+**************************************/
+.gallery-title { margin-bottom:15px; }
+.gallery-item { margin-bottom:50px; margin-top:15px; }
+
+.gallery-hover-6col,
+.gallery-hover-4col,
+.gallery-hover-3col,
+.gallery-hover-4col-cir {
+	display: none;
+	position: absolute;
+	z-index: 10;
+}
+.gallery-hover-4col-cir{
+	-webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+          border-radius: 500px;
+}
+
+/* Large Desktop Size */
+@media (min-width: 1200px) {
+	.gallery-hover-6col {width:170px; height:139px;}
+	.gallery-hover-4col {width:20px; height:20px;}
+	.gallery-hover-3col {width:370px; height:300px;}
+	.gallery-hover-4col-cir {width:270px; height:270px;}
+	.gallery-hover-4col-cir .gallery-icons {top: 45%; left:34%;}
+}
+
+/* Small Desktop Size */
+@media (min-width: 980px) and (max-width: 1199px) {
+	.gallery-hover-6col {width:140px; height:114px;}
+	.gallery-hover-4col {width:20px; height:20px;}
+	.gallery-hover-3col {width:300px; height:243px;}
+	.gallery-hover-4col-cir {width:220px; height:220px;}
+	.gallery-hover-4col-cir .gallery-icons {top: 42%; left:29%;}
+
+	/* Clip descriptions */
+	li.span4 .project-details {
+	    -o-text-overflow: ellipsis;
+	    text-overflow:    ellipsis;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    width: 280px;
+	}
+	li.span3 .project-details {
+	    -o-text-overflow: ellipsis;
+	    text-overflow:    ellipsis;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    width: 200px;
+	}
+	li.span2 .project-details {
+	    -o-text-overflow: ellipsis;
+	    text-overflow:    ellipsis;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    width: 120px;
+	}
+}
+
+/* Portrait tablet to landscape */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	/* Clip descriptions */
+	li.span2 .project-details {display:none;}
+	li.span3 .project-details {
+	    -o-text-overflow: ellipsis;
+	    text-overflow:    ellipsis;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    width: 146px;
+	}
+	li.span4 .project-details {
+	    -o-text-overflow: ellipsis;
+	    text-overflow:    ellipsis;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    width: 208px;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.project-details {width: 250px; text-align: center}
+	.gallery-post-grid {text-align: center}
+	.project-details {margin-left:auto; margin-right: auto;}
+	.gallery {text-align: center; }
+	.gallery-cats { display:block;}
+	li.span2 .project-details {
+	    -o-text-overflow: ellipsis;
+	    text-overflow:    ellipsis;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    width: 150px;
+		}
+}
+/* Mobile Landscape Size */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	li.span4 .project-details {width:350px;}
+}
+/* Mobile Portrait Size */
+@media only screen and (max-width: 479px) {
+	li.span4 .project-details {width:260px;}
+}
+
+.project-details {
+	background: #f8f8f8;
+	display: block;
+	padding:10px;
+	border-bottom: 1px dotted #a9a9a9;
+	font-family: Georgia;
+	font-style: italic;
+
+	width: auto\9;
+    height: auto;
+    max-width: 100%;
+}
+.project-details a {
+	margin: 0px; 
+	font-size: 12px; 
+	font-style: normal;
+	text-shadow:none;
+	display: block;
+	font-family: "Oswald", sans-serif; 
+	font-weight: normal;
+	text-transform:uppercase; 
+}
+.project-details {color: #6f6f6f;}
+.project-details a {color: #333333;}
+.project-details a:hover {color: #020031; text-decoration: none;}
+
+.project-info {margin: 0px 0px 60px 0px;}
+.project-info li { 
+	list-style: none; 
+	border-bottom: 1px dashed #a9a9a9;;
+	padding: 10px; }
+.project-info li h6 {display: inline; margin-right: 5px;}
+
+.gallery-icons {
+	z-index: 9;
+	position: relative;
+	bottom: 0px; 
+	right: 0px;
+	width: 89px;
+	height: 42px;
+	display: block;
+}
+a.item-zoom-link { 
+	height: 42px;
+	width: 42px;
+	background: #ffffff url(../img/gallery-item-icons.png) no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+	display: block;
+}
+a.item-details-link { 
+	height: 42px;
+	width: 42px;
+	background: #ffffff url(../img/gallery-item-icons.png) no-repeat;
+	background-position: -42px 0px;
+	position:absolute; 
+	left: 47px;
+	display: block;
+}
+a.item-zoom-link:hover {background: #93BF01 url(../img/gallery-item-icons.png) no-repeat;}
+a.item-details-link:hover {background: #93BF01 url(../img/gallery-item-icons.png) no-repeat; background-position: -42px 0px;}
+
+.gallery-post-grid {margin:0px;}
+.gallery-post-grid li {list-style: none; float: left; margin-bottom: 60px;}
+
+.gallery-cats {margin: 0px 0px 20px 0px;}
+.gallery-cats li{
+	list-style: none; 
+	float: left; 
+	padding: 0px 10px;
+	border-left: 1px dotted #a9a9a9;
+	background-color: #333;
+}
+.gallery-cats li:first-child{border-left:0px;}
+	
+
+
+ /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+/**************************************
+/ Footer
+**************************************/
+.footer-container {
+	width:100%;
+	background:#333;
+	clear: both;
+ 	position: relative;
+ 	z-index: 10;
+}
+.footer-row {
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	width: 100%;
+	color: crimson;
+}
+.footer-col {color:#ababab; font-size: 11px;}
+.footer-col a {color: #8C8C8C; font-weight: bold;}
+.footer-col a:hover {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+.footer-col h5, .footer-col strong {color:#f9f9f9; text-shadow:none;}
+.footer-col h5 {margin-bottom: 25px;}
+.footer-col ul {margin: 0px;}
+.footer-col ul li {list-style: none; padding-bottom: 20px;}
+.footer-col ul.post-list li {
+	border-bottom: 1px dashed #504f4f;
+	padding: 10px 0px;
+}
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	.footer-col {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+	}
+	.footer-sub .right {display: none;}
+}
+ul.img-feed li {
+	float: left; 
+	margin: 0px 7px 7px 0px; 
+	padding-bottom: 0px;
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+	ul.img-feed li:nth-last-child(-n+4) {display: none;}
+}
+
+/**** Social Icons ****/
+.social-icons {padding-top: 10px;}
+.social-icons li {
+	list-style: none; 
+	float: left;
+	margin-right: 6px;
+}
+/* Small Monitor */
+@media (min-width: 980px) and (max-width: 1199px) {
+	.social-icons li:last-child {display:none;}
+}
+
+/**************************************
+/ MISC
+**************************************/
+.row {
+	margin-bottom: 30px;
+}
+
+
+@media only screen and  (max-width: 767px) {
+	.btn {margin-bottom: 20px;}
+}
+
+.left {float: left;}
+.right {float: right;}
+.align-left{float: left; margin: 0px 20px 20px 0px;}
+.align-right{float: right; margin: 0px 0px 20px 20px;}
+
+.color-bg { background: #020031; }
+.color { color:#d8450b; }
+.color-bar-1, .color-bar-2 { width:100% }
+.color-bar-1 { background:#414141; height:5px; }
+.color-bar-2 { height:3px; }
+.page-header { margin:0px }
+.lead {line-height:28px; margin: 20px 0px 30px 0px; }
+
+
+/***** Lightbox *****/
+#lightbox-image-details-caption {
+	font-family: "Oswald", sans-serif; 
+	font-weight: normal;
+	text-transform:uppercase;
+	font-size: 14px;
+}
+#lightbox-secNav-btnClose {width: 30px; padding-bottom: 0;}
+#lightbox-image-details-currentNumber {display: none; visibility: hidden;}
